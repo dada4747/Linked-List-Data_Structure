@@ -1,6 +1,6 @@
 package com.bridgelabz;
 
-public class NewLinkList {
+public class NewLinkList<K> {
     public INode head;
     public INode tail;
 
@@ -51,6 +51,15 @@ public class NewLinkList {
         this.tail = tempNode;
         tempNode = tempNode.getNext();
         return tempNode;
+    }
+    public boolean search(K key) {
+        INode tempNode = head;
+        while (tempNode != null && tempNode.getNext() != null) {
+            if(tempNode.getNext().getKey().equals(key)){
+                return true;
+            }
+        }
+        return false;
     }
 
 
