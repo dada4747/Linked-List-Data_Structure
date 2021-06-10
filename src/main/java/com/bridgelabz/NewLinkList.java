@@ -61,6 +61,18 @@ public class NewLinkList<K> {
         }
         return false;
     }
+    public void searchAndInsert(int num, INode newNode){
+        INode tempNode = head;
+        while (tempNode.getNext() != null){
+            if(tempNode.getKey().equals(num)) {
+                INode temp = tempNode.getNext();
+                tempNode.setNext(newNode);
+                newNode.setNext(temp);
+            }
+            tempNode = tempNode.getNext();
+        }
+    }
+
 
 
     public void printNodes() {
