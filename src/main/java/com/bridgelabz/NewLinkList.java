@@ -32,6 +32,13 @@ public class NewLinkList {
             this.tail = newNode;
         }
     }
+
+    public void insert(INode node, INode newNode) {
+        INode tempNode = node.getNext();
+        node.setNext(newNode);
+        newNode.setNext(tempNode);
+    }
+
     public void printNodes() {
         StringBuffer nodes = new StringBuffer("My Nodes: ");
         INode tempNode = head;
