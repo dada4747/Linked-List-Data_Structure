@@ -1,2 +1,6 @@
-com/bridgelabz/MyNode.java
- com.bridgelabz.MyNode
+com/bridgelabz/INode.java
+ com.bridgelabz.INode
+com/bridgelabz/Node.java
+ com.bridgelabz.Node
+com/bridgelabz/NewLinkList.java
+ com.bridgelabz.NewLinkList
