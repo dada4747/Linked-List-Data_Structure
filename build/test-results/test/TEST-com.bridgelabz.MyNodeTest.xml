@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MyNodeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-06-10T02:32:39" hostname="DESKTOP-4IPP4FC" time="0.069">
+<testsuite name="com.bridgelabz.MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-10T02:47:20" hostname="DESKTOP-4IPP4FC" time="0.046">
   <properties/>
-  <testcase name="given3Numbers_whenAdded_toLinkedListShouldAdded()" classname="com.bridgelabz.MyNodeTest" time="0.064"/>
-  <testcase name="givenNumber_whenLinked_shouldReturnTrue()" classname="com.bridgelabz.MyNodeTest" time="0.002"/>
+  <testcase name="given3Numbers_WhenAppendedToLinkedList_should_BeAddedToLinkedList()" classname="com.bridgelabz.MyNodeTest" time="0.046"/>
   <system-out><![CDATA[My Nodes: 56-->30-->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
