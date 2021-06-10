@@ -56,4 +56,19 @@ public class MyNodeTest {
                 linkedList.tail.equals(thirdNode);
         Assertions.assertTrue(res);
     }
+    @Test
+    public void Given3Numbers_WhenDeleted_ToLinkedListShould_Become2_Numbers() {
+        Node<Integer> firstNode = new Node<Integer>(56);
+        Node<Integer> secondNode = new Node<Integer>(30);
+        Node<Integer> thirdNode = new Node<Integer>(70);
+        NewLinkList linkedList = new NewLinkList();
+        linkedList.add(firstNode);
+        linkedList.append(secondNode);
+        linkedList.append(thirdNode);
+        linkedList.pop();
+        linkedList.printNodes();
+        boolean res = linkedList.head.equals(secondNode) &&
+                linkedList.head.getNext().equals(thirdNode);
+        Assertions.assertTrue(res);
+    }
 }
