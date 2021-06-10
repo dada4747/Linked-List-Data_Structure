@@ -61,6 +61,29 @@ public class NewLinkList<K> {
         }
         return false;
     }
+    public void searchAndDelete(int num) {
+        INode tempNode = head;
+        while (tempNode.getNext() != null) {
+            if (tempNode.getNext().getKey().equals(num)) {
+                INode temp = tempNode.getNext().getNext();
+                tempNode.setNext(temp);
+            }
+            tempNode = tempNode.getNext();
+        }
+    }
+
+    public int size()
+    {
+        INode temp = head;
+        int count = 0;
+        while (temp != null)
+        {
+            count++;
+            temp = temp.getNext();
+        }
+        return count;
+    }
+
     public void searchAndInsert(int num, INode newNode){
         INode tempNode = head;
         while (tempNode.getNext() != null){

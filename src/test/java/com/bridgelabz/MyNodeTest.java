@@ -112,4 +112,22 @@ public class MyNodeTest {
                 secondNode.getNext().equals(newNode);
         Assertions.assertTrue(res);
     }
+    @Test
+    public void given3Numbers_WhenSearch40AndDelete_AndDisplaySizeOfLinkedList() {
+        Node<Integer> firstNode = new Node<Integer>(56);
+        Node<Integer> secondNode = new Node<Integer>(30);
+        Node<Integer> thirdNode = new Node<Integer>(70);
+        Node<Integer> newNode = new Node<Integer>(40);
+        NewLinkList linkedList = new NewLinkList();
+        linkedList.add(firstNode);
+        linkedList.append(secondNode);
+        linkedList.append(thirdNode);
+        linkedList.searchAndInsert(30, newNode);
+        linkedList.searchAndDelete(40);
+        linkedList.printNodes();
+        System.out.println("Size of a Linked List" + linkedList.size());
+        boolean res = linkedList.head.getNext().equals(secondNode) &&
+                secondNode.getNext().equals(thirdNode);
+        Assertions.assertTrue(res);
+    }
 }

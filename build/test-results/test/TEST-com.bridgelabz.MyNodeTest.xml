@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-10T04:15:26" hostname="DESKTOP-4IPP4FC" time="0.067">
+<testsuite name="com.bridgelabz.MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-10T06:58:25" hostname="DESKTOP-4IPP4FC" time="0.086">
   <properties/>
-  <testcase name="given3Numbers_whenSearchAnyNumber_andInsert_inLinkedList()" classname="com.bridgelabz.MyNodeTest" time="0.067"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="given3Numbers_WhenSearch40AndDelete_AndDisplaySizeOfLinkedList()" classname="com.bridgelabz.MyNodeTest" time="0.086"/>
+  <system-out><![CDATA[My Nodes: 56-->30-->70
+Size of a Linked List3
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
