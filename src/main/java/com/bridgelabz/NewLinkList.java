@@ -1,6 +1,6 @@
 package com.bridgelabz;
 
-public class NewLinkList<K> {
+public class NewLinkList<K extends Comparable<K>> {
     public INode head;
     public INode tail;
 
@@ -110,5 +110,35 @@ public class NewLinkList<K> {
         System.out.println(nodes);
     }
 
+
+    public static <K extends Comparable<K>> boolean maximum(K x, K y) {
+        K max = x;
+        if (y.compareTo(max) > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public <K extends Comparable<K>> void sortList() {
+        INode<K> current = this.head;
+        INode<K> index = null;
+        K temp;
+        if (this.head == null)
+            return;
+        else {
+            while (current != null) {
+                index = current.getNext();
+                while (index != null) {
+                    if (maximum(index.getKey(), current.getKey())) {
+                        temp = current.getKey();
+                        current.setKey(index.getKey());
+                        index.setKey(temp);
+                    }
+                    index = index.getNext();
+                }
+                current = current.getNext();
+            }
+        }
+    }
 
 }

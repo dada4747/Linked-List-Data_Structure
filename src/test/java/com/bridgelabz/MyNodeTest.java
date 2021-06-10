@@ -130,4 +130,27 @@ public class MyNodeTest {
                 secondNode.getNext().equals(thirdNode);
         Assertions.assertTrue(res);
     }
+
+    @Test
+    public void givenAllElements_GetSortedList() {
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> secondNode = new Node<>(30);
+        Node<Integer> thirdNode = new Node<>(40);
+        Node<Integer> fourthNode = new Node<>(70);
+        NewLinkList linkedList = new NewLinkList();
+        linkedList.add(firstNode);
+        linkedList.append(secondNode);
+        linkedList.append(thirdNode);
+        linkedList.append(fourthNode);
+        System.out.println("\nBefore Sorting: ");
+        linkedList.printNodes();
+        linkedList.sortList();
+        System.out.println("\nAfter Sorting: ");
+        linkedList.printNodes();
+        boolean result = linkedList.head.equals(firstNode) &&
+                firstNode.getNext().equals(secondNode) &&
+                secondNode.getNext().equals(thirdNode) &&
+                linkedList.tail.equals(fourthNode);
+        Assertions.assertTrue(result);
+    }
 }

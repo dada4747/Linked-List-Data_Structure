@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-10T06:58:25" hostname="DESKTOP-4IPP4FC" time="0.086">
+<testsuite name="com.bridgelabz.MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-10T07:32:00" hostname="DESKTOP-4IPP4FC" time="0.043">
   <properties/>
-  <testcase name="given3Numbers_WhenSearch40AndDelete_AndDisplaySizeOfLinkedList()" classname="com.bridgelabz.MyNodeTest" time="0.086"/>
-  <system-out><![CDATA[My Nodes: 56-->30-->70
-Size of a Linked List3
+  <testcase name="givenAllElements_GetSortedList()" classname="com.bridgelabz.MyNodeTest" time="0.043"/>
+  <system-out><![CDATA[
+Before Sorting: 
+My Nodes: 56-->30-->40-->70
+
+After Sorting: 
+My Nodes: 30-->40-->56-->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
